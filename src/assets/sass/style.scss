@@ -1,0 +1,15 @@
+@import "global/fonts";
+@import "global/vars";
+@import "global/mixins";
+
+/* import bootstrap */
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+/* import slick-carousel */
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+
+/* import blocks */
+@import "blocks/body";

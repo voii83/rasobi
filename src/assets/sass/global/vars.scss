@@ -1,0 +1,22 @@
+/* fonts */
+$ff-main: 'Roboto-Regular';
+$ff-decor: 'Gilroy';
+
+/* colors */
+$white: #ffffff;
+$black: #000000;
+$blue-dark: #1e4163;
+$blue-bright: #0082ff;
+$blue-light: #336799;
+$blue-ulight: #3a64a2;
+$red: #a80532;
+
+$theme-colors: (
+        "m-white": $white,
+        "m-black": $black,
+        "m-blue-dark": $blue-dark,
+        "m-blue-bright" : $blue-bright,
+        "m-blue-light" : $blue-light,
+        "m-blue-ulight" : $blue-ulight,
+        "m-red": $red,
+);
