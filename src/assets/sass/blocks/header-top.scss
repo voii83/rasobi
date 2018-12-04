@@ -2,94 +2,85 @@
   background: linear-gradient(90deg, #C4C4C4 0%, #C4C4C4 0%, #336799 0.01%, #17548F 50%, #336799 99.9%, #C4C4C4 100%, #C4C4C4 100%);
 
   &-left, &-center, &-right {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: $white;
-    font-size: 14px;
-    text-align: center;
-    font-family: $ff-thin;
-
-    & img {
-      margin-right: 6px;
-    }
-  }
-
-  &-left li, &-center li {
     display: inline-block;
     vertical-align: middle;
-  }
+    color: $white;
+    font-family: $ff-thin;
+    font-size: 14px;
+    padding: 13px 0;
 
-  &-left {
-    text-align: left;
-    padding-right: 0;
-
-    & li {
-      margin-right: 35px;
-      &:last-child {
-        margin-right: 0;
-      }
+    & ul li {
+      list-style: none;
+      display: inline-block;
+      vertical-align: middle;
     }
 
     & a {
-      color: white;
-      text-decoration-line: underline;
+      color: $white;
+      text-decoration: underline;
+    }
+
+    & img {
+      vertical-align: middle;
+      margin-right: 13px;
+    }
+  }
+
+  &-left {
+    & li {
+      margin-right: 40px;
     }
   }
 
   &-center {
     background: $blue-light;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+
     & li {
-      margin-right: 22px;
-      margin-left: 22px;
+      &:first-child {
+        margin: 0 48px;
+      }
+
+      margin: 0 20px;
+
+      &:last-child {
+        margin: 0 38px;
+      }
     }
   }
 
   &-right {
-    text-align: right;
-    padding-left: 0;
+
+    margin-left: 63px;
 
     & a {
       color: $yellow;
-      text-decoration-line: underline;
+      text-decoration: underline;
     }
   }
 
-  @media (max-width: 1199px) {
-
-    &-center {
-      & li {
-        margin-right: 4px;
-        margin-left: 4px;
-      }
-    }
-  }
-
-  @media (max-width: 991px) {
+  @media (max-width: 1219px) {
 
     &-left {
-      text-align: left;
+      & ul li:last-child {
+        margin-right: 20px;
+      }
+    }
 
-      & li {
-        margin-right: 8px;
-        &:last-child {
-          margin-right: 7px;
+    &-center {
+      & ul li {
+        display: none;
+
+        &:first-child {
+          display: inline-block;
+          margin: 0 65px;
         }
       }
     }
 
-    &-center {
-      & li {
-        margin-right: 23px;
-        margin-left: 23px;
-      }
+    &-right {
+      margin-left: 33px;
     }
-  }
-
-  @media (max-width: 767px) {
-    display: none;
   }
 
 }

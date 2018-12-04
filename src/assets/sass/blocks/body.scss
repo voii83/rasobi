@@ -1,4 +1,17 @@
 body {
   font-family: $ff-regular;
   min-width: 280px;
+  transition: 1s;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1219px) {
+  .container {
+    max-width: 768px;
+  }
 }

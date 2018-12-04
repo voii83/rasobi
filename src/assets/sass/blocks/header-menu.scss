@@ -1,0 +1,42 @@
+.header-menu {
+  margin-top: 28px;
+  padding-bottom: 23px;
+
+  & li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 82px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      font-size: 14px;
+      color: $dark-grey;
+    }
+
+    &.active a{
+      font-size: 14px;
+      text-decoration: none;
+      color: $blue-bright;
+    }
+  }
+
+  @media (max-width: 1219px) {
+
+    & li {
+      margin-right: 78px;
+    }
+
+    & li:nth-child(n+6) {
+      display: none;
+    }
+    & li:nth-child(5) {
+      margin-right: 0;
+    }
+
+  }
+
+}

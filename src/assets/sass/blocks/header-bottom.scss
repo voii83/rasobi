@@ -1,60 +1,85 @@
 .header-bottom {
-  &-logo {
 
+  &-logo, &-search, &-contact {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 32px;
   }
 
   &-search {
-    text-align: center;
+    position: relative;
+    margin-left: 81px;
+    margin-right: 81px;
 
-    & form {
-      & input {
-        width: 65%;
-        padding: 14px 35px;
-        font-size: 14px;
-        background: #F6F6F6;
-        border: 1px solid #D1D1D1;
-      }
-      & button {
-        background: $white;
-        border: 1px solid $blue-light;
-        padding: 10px 35px 12px 35px;
-        font-size: 18px;
-        color: $blue-ulight;
-      }
+    & input {
+      width: 421px;
+      padding: 13px 0 11px 56px;
+      background: $light-grey;
+      border: 1px solid $grey;
+    }
+
+    & img.ico-search {
+      position: absolute;
+      left: 24px;
+      top: 47px;
+    }
+
+    & button {
+      padding: 11px 34px;
+      background: $white;
+      border: 1px solid $blue-light;
+      font-size: 18px;
+      color: $blue-ulight;
     }
   }
 
   &-contact {
     text-align: right;
-
-    &__phone {
+    & .header-phone {
       font-weight: bold;
       font-size: 24px;
       color: $red;
     }
 
-    &__selection a{
-      font-weight: 500;
-      font-size: 14px;
-      text-decoration-line: underline;
-      color: $blue-ulight;
-    }
-  }
+    & .header-selection {
 
-  @media (max-width: 991px) {
-    &-search {
-
-      & form {
-
-        & input {
-          width: 55%;
-        }
-        & button {
-          padding: 10px 20px 12px 20px;
-          font-size: 18px;
-          color: $blue-ulight;
-        }
+      & a {
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: $blue-ulight;
       }
     }
   }
+
+  @media (max-width: 1219px) {
+
+    &-logo, &-search, &-contact {
+      padding-top: 44px;
+    }
+
+    &-logo img {
+      width: 182px;
+    }
+    &-search {
+      margin-left: 45px;
+      margin-right: 35px;
+
+      & input {
+        width: 115px;
+        padding: 13px 0 11px 52px;
+      }
+
+      & img.ico-search {
+        left: 18px;
+        top: 54px;
+      }
+
+      & button {
+        padding: 11px 20px;
+      }
+
+    }
+  }
+
 }
