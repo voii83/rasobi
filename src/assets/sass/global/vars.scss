@@ -1,5 +1,22 @@
+/* grid */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1180px
+);
+
 /* fonts */
-$ff-main: 'Roboto-Regular';
+$ff-regular: 'Roboto-Regular';
+$ff-thin: 'Roboto-Thin';
 $ff-decor: 'Gilroy';
 
 /* colors */
@@ -10,6 +27,7 @@ $blue-bright: #0082ff;
 $blue-light: #336799;
 $blue-ulight: #3a64a2;
 $red: #a80532;
+$yellow: #e5c249;
 
 $theme-colors: (
         "m-white": $white,
