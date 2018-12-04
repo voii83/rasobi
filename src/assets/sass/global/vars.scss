@@ -9,7 +9,7 @@ $grid-breakpoints: (
 
 $container-max-widths: (
         sm: 540px,
-        md: 720px,
+        md: 728px,
         lg: 960px,
         xl: 1180px
 );
@@ -21,6 +21,8 @@ $ff-decor: 'Gilroy';
 
 /* colors */
 $white: #ffffff;
+$light-grey: #f6f6f6;
+$grey: #d1d1d1;
 $black: #000000;
 $blue-dark: #1e4163;
 $blue-bright: #0082ff;
@@ -31,6 +33,8 @@ $yellow: #e5c249;
 
 $theme-colors: (
         "m-white": $white,
+        "m-light-grey": $light-grey,
+        "m-grey": $grey,
         "m-black": $black,
         "m-blue-dark": $blue-dark,
         "m-blue-bright" : $blue-bright,
