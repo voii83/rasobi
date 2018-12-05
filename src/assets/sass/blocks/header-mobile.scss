@@ -1,0 +1,76 @@
+.header-mobile {
+  display: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+
+  &-logo img {
+    width: 160px;
+    padding: 7px 0;
+  }
+
+  &-menu {
+
+    & *:focus,.header-mobile-menu *::before,.header-mobile-menu *::after {
+      padding: 0;
+      margin: 0;
+      outline: 0;
+      box-sizing: content-box;
+    }
+
+    & ul {
+      margin-top: 10px;
+    }
+
+    & li {
+      font-size: 14px;
+      text-align: left;
+      list-style: none;
+      padding-left: 20px;
+      border-bottom: 1px solid $light-grey;
+    }
+
+    & li a {
+      display: block;
+      text-decoration: none;
+      color: $dark-grey;
+      padding: 10px 0;
+    }
+
+    & ul {
+      display: none;
+    }
+
+    & nav::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      display: block;
+      background-image: url('../img/ico-mob-menu.svg');
+      cursor: pointer;
+      height: 22px;
+      width: 30px;
+    }
+
+    &::after {
+      z-index: 1;
+    }
+    & nav::before {
+      z-index: 2;
+    }
+    & nav:focus::before {
+      z-index: 0;
+    }
+    & nav:focus ul,
+    & ul:hover {
+      display: block;
+    }
+  }
+
+}
+
+@media (max-width: 761px) {
+  .header-mobile {
+    display: block;
+  }
+}

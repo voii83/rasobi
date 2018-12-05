@@ -10,8 +10,18 @@ body {
   padding: 0 20px;
 }
 
+.rel {
+  position: relative;
+}
+
 @media (max-width: 1219px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media (max-width: 761px) {
+  .container {
+    max-width: 280px;
   }
 }
