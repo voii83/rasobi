@@ -1,0 +1,42 @@
+.left-sidebar {
+
+  display: inline-block;
+  vertical-align: top;
+
+  .spoiler-item {
+    width: 280px;
+    margin-bottom: 19px;
+
+    .spoiler-title {
+      background: $blue-light;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+      padding: 15px 0 15px 19px;
+
+      & a {
+        text-decoration: none;
+        line-height: 26px;
+        font-size: 16px;
+        color: $white;
+      }
+    }
+
+    .spoiler-content {
+      background: $blue-dark;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+      padding: 33px 19px 13px 19px;
+
+      & li {
+        list-style: none;
+        margin-bottom: 18px;
+      }
+
+      & a {
+        font-size: 14px;
+        color: $white;
+        text-decoration: none;
+      }
+
+    }
+  }
+
+}

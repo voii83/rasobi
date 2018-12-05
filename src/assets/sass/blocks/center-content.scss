@@ -1,0 +1,50 @@
+.center-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 860px;
+  margin-left: 20px;
+
+  &-item {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 33px 56px 33px 82px;
+    margin-bottom: 20px;
+
+    & h3 {
+      font-weight: bold;
+      line-height: 25px;
+      font-size: 24px;
+      color: $blue-light;
+    }
+
+    & p {
+      line-height: 26px;
+      font-size: 16px;
+      color: $dark-grey;
+    }
+  }
+
+  &-search {
+    margin-bottom: 20px;
+
+    & input {
+      width: 594px;
+      background: $white;
+      border: 1px solid $light-grey-100;
+      padding: 16px 57px 17px 62px;
+      color: $black;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
+
+    & button {
+      background: $white;
+      border: 1px solid $blue-light;
+      padding: 14px 44px 16px 45px;
+      font-size: 18px;
+      color: $blue-ulight;
+    }
+  }
+}

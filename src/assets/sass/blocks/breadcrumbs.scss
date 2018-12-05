@@ -1,0 +1,25 @@
+.breadcrumbs {
+  margin: 17px 0 32px 0;
+
+  & li, & a{
+    font-size: 18px;
+    color: $blue-light;
+  }
+
+  & li {
+    display: inline-block;
+    vertical-align: middle;
+
+    &::after {
+      content: ' / ';
+    }
+
+    &:last-child::after {
+      content: '';
+    }
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
