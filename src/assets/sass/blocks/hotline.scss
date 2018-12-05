@@ -1,0 +1,134 @@
+.hotline-calls-header {
+  margin: 118px 0 66px 0;
+
+  & h2{
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 34px;
+    color: $black;
+  }
+}
+
+.hotline {
+  background: linear-gradient(90deg, #336799 0%, #A80532 100%);
+
+  & img {
+    position: absolute;
+    left: 50%;
+    top: -184px;
+    margin-left: -160px;
+  }
+
+  & .hotline-calls-text {
+
+    color: $white;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  & .text-left {
+    float: left;
+
+    & ul {
+      padding: 39px 0 24px 0
+    }
+
+    & li {
+      list-style: none;
+      font-weight: 900;
+      line-height: 38px;
+      font-size: 33px;
+
+      &:last-child {
+        font-weight: normal;
+        font-size: 30px;
+      }
+    }
+  }
+
+  & .text-right {
+    float: right;
+    padding: 50px 0;
+    font-family: $ff-decor;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1219px) {
+  .hotline-calls-header {
+    margin: 43px 0 27px;
+  }
+
+  .hotline {
+    & img {
+      width: 394px;
+      left: 50%;
+      top: -79px;
+      margin-left: -14px;
+    }
+
+    & .hotline-calls-text {
+      padding: 43px 0;
+    }
+
+    & .text-left {
+      float: none;
+
+      & ul {
+        padding: 0 0 10px 0;
+      }
+    }
+
+    & .text-right {
+      float: none;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 761px) {
+  .hotline-calls-header {
+    text-align: center;
+    margin: 0 0 20px 0;
+
+    & h2{
+      font-size: 22px;
+    }
+  }
+  .hotline {
+    text-align: center;
+
+    & .hotline-calls-text {
+      padding: 33px 0;
+    }
+
+    & img {
+      display: none;
+    }
+
+    & .text-left {
+
+      & ul {
+        padding: 0;
+      }
+
+      & li {
+        font-size: 30px;
+
+        &:last-child {
+          font-size: 22px;
+        }
+      }
+    }
+
+    & .text-right {
+      font-family: $ff-regular;
+      font-size: 32px;
+    }
+  }
+}

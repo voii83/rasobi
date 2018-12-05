@@ -1,5 +1,5 @@
 .breadcrumbs {
-  margin: 17px 0 32px 0;
+  margin: 12px 0 41px 0;
 
   & li, & a{
     font-size: 18px;
@@ -22,4 +22,11 @@
   & a {
     text-decoration: none;
   }
+
+  @media (max-width: 1219px) {
+    & {
+      margin: 12px 0 25px 0;
+    }
+  }
+
 }
