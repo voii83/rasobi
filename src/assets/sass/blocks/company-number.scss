@@ -1,0 +1,111 @@
+.company-number {
+  margin-top: 140px;
+  padding-bottom: 75px;
+
+  &-header h2 {
+    font-weight: 900;
+    line-height: 36px;
+    font-size: 34px;
+    color: $black;
+  }
+
+  &-items {
+    margin-top: 60px;
+
+    & li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 178px;
+
+      &:first-child {
+        margin-left: 45px;
+      }
+
+      &:last-child {
+        margin-right: 45px;
+
+        & .text {
+          width: 165px;
+        }
+      }
+    }
+
+    & .number {
+      font-family: $ff-thin;
+      font-weight: 200;
+      line-height: 101px;
+      font-size: 96px;
+      text-align: center;
+      color: $red;
+    }
+
+    & .text {
+      line-height: 19px;
+      font-size: 18px;
+      text-align: center;
+      color: #000000;
+      margin: 0 auto;
+      width: 110px;
+    }
+  }
+
+  @media (max-width: 1219px) {
+
+    & {
+      margin-top: 114px;
+    }
+
+    &-items {
+
+      & li {
+        margin-right: 50px;
+
+        &:first-child {
+          margin-left: 19px;
+        }
+
+        &:last-child {
+          margin-right: 19px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 761px) {
+
+    & {
+      margin-top: 46px;
+      padding-bottom: 46px;
+    }
+
+    &-header h2 {
+      line-height: 23px;
+      font-size: 22px;
+    }
+
+    &-items {
+      text-align: center;
+
+      & li {
+        display: block;
+        list-style: none;
+        margin: 0;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        &:last-child {
+          & .text {
+            width: 100%;
+          }
+        }
+
+        & .text {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
